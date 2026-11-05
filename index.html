@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sief Allah Daabes — Cybersecurity Engineer & Tech Founder</title>
-<meta name="description" content="Sief Allah Daabes — cybersecurity and network engineer in Giza, Egypt. CCNA, CEH, Fortinet certified. SOC analyst candidate, founder of Fekra Tech Academy, full-stack and IoT developer." />
+<title>Sief Allah Daabes — SOC Analyst & Cybersecurity Engineer | Open to Work</title>
+<meta name="description" content="Sief Allah Daabes — CCNA, CEH and Fortinet-certified cybersecurity &amp; network engineer in Giza, Egypt, open to SOC Analyst, network security and cybersecurity instructor roles. 8 certifications, 2 years of enterprise technical support at AT&amp;T (Sutherland) and Concentrix, 500+ students trained. Download the CV." />
 <meta name="author" content="Sief Allah Ahmed Daabes" />
 <link rel="canonical" href="https://sd3bes.github.io/" />
 
 <!-- Social previews -->
 <meta property="og:type" content="profile" />
 <meta property="og:title" content="Sief Allah Daabes — Cybersecurity Engineer & Tech Founder" />
-<meta property="og:description" content="CCNA · CEH · Fortinet certified. SOC & network security, founder of Fekra Tech Academy, full-stack and IoT developer. Open to SOC Analyst roles." />
+<meta property="og:description" content="Open to work: SOC Analyst · Network Security · Cybersecurity Instructor. CCNA, CEH, Fortinet certified. 8 certifications, 2 years enterprise tech support, 500+ students trained. Giza, Egypt — on-site, hybrid or remote." />
 <meta property="og:url" content="https://sd3bes.github.io/" />
 <meta property="og:image" content="https://sd3bes.github.io/assets/og-image.png" />
 <meta property="og:image:width" content="1200" />
@@ -19,7 +19,7 @@
 <meta property="og:image:alt" content="Sief Allah Daabes, Cybersecurity Engineer" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Sief Allah Daabes — Cybersecurity Engineer & Tech Founder" />
-<meta name="twitter:description" content="CCNA · CEH · Fortinet certified. SOC & network security, founder of Fekra Tech Academy. Open to SOC Analyst roles." />
+<meta name="twitter:description" content="Open to work: SOC Analyst · Network Security · Cybersecurity Instructor. CCNA, CEH, Fortinet certified. Giza, Egypt — on-site, hybrid or remote." />
 <meta name="twitter:image" content="https://sd3bes.github.io/assets/og-image.png" />
 <meta name="theme-color" content="#0b0f1a" />
 
@@ -35,6 +35,13 @@
   "name": "Sief Allah Ahmed Daabes",
   "alternateName": "Sief Allah Daabes",
   "jobTitle": "Cybersecurity & Network Engineer",
+  "description": "CCNA, CEH and Fortinet-certified cybersecurity and network engineer open to SOC Analyst, network security and cybersecurity instructor roles in Egypt or remote.",
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "name": "CCNA", "recognizedBy": { "@type": "Organization", "name": "Cisco" } },
+    { "@type": "EducationalOccupationalCredential", "name": "Certified Ethical Hacker (CEH)", "recognizedBy": { "@type": "Organization", "name": "EC-Council" } },
+    { "@type": "EducationalOccupationalCredential", "name": "Fortinet Certified Associate in Cybersecurity", "recognizedBy": { "@type": "Organization", "name": "Fortinet" } },
+    { "@type": "EducationalOccupationalCredential", "name": "MCSA", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } }
+  ],
   "url": "https://sd3bes.github.io/",
   "image": "https://sd3bes.github.io/assets/sief-daabes.jpg",
   "email": "mailto:Siefallahdaabes@gmail.com",
@@ -258,6 +265,59 @@
     border-left: 2px solid var(--accent);
     padding-left: 20px;
   }
+
+  /* ── HERO STATS ── */
+  .hero-stats {
+    grid-column: 1 / -1;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 4px;
+  }
+  .stat {
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+  }
+  .stat-num {
+    font-size: 26px; font-weight: 700; line-height: 1;
+    color: var(--white); letter-spacing: -.02em;
+  }
+  .stat-num small { font-size: 14px; font-weight: 600; color: var(--accent); }
+  .stat-label { font-size: 12px; line-height: 1.4; color: var(--muted); margin-top: 7px; }
+
+  /* ── VALUE PROPOSITION & FACTS ── */
+  .value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+    margin-top: 22px;
+  }
+  .value-card {
+    padding: 16px 18px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+  }
+  .value-card h3 { font-size: 14.5px; color: var(--white); margin-bottom: 6px; letter-spacing: -.01em; }
+  .value-card p { font-size: 13.5px; line-height: 1.55; color: var(--body2); }
+  .facts {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0 28px;
+    font-size: 13.5px;
+  }
+  .facts div { display: flex; gap: 12px; padding: 8px 0; border-bottom: 1px dashed var(--border); }
+  .facts dt {
+    flex: 0 0 84px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--accent); padding-top: 3px;
+  }
+  .facts dd { color: var(--text); line-height: 1.5; }
 
   /* ── SKILLS GRID ── */
   .skills-grid {
@@ -564,6 +624,9 @@
 
   @media (max-width: 640px) {
     .hero { grid-template-columns: 1fr; }
+    .hero-stats { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .stat { padding: 12px 12px; }
+    .stat-num { font-size: 22px; }
     .cta { padding: 28px 20px; }
     .status-badge { align-self: auto; }
     .hero-photo { width: 100px; height: 100px; }
@@ -610,14 +673,28 @@
     .contact-pill.primary, .status-badge, .no-print, .site-nav, .skip-link, .cta { display: none !important; }
     .hero-photo { width: 78pt; height: 78pt; border: 1.5pt solid var(--accent); box-shadow: none; margin-top: 0; }
 
-    .section { margin-top: 9pt; }
+    .section { margin-top: 8pt; }
     .section-label { break-after: avoid; }
     .section-label { font-size: 7.5pt; margin-bottom: 6pt; color: var(--accent); }
     .section-label::after { background: var(--border); }
     .section-note { display: none; }
-    .summary-text { font-size: 9.5pt; line-height: 1.4; padding-left: 10pt; border-left-width: 1.5pt; }
+    .summary-text { font-size: 9.5pt; line-height: 1.35; padding-left: 10pt; border-left-width: 1.5pt; }
+    .hero-stats { gap: 6pt; margin-top: 6pt; }
+    .stat { padding: 4pt 7pt; border: 1pt solid var(--border); border-radius: 0; break-inside: avoid; }
+    .stat-num { font-size: 13pt; color: #000; }
+    .stat-num small { font-size: 8.5pt; }
+    .stat-label { font-size: 7.5pt; line-height: 1.3; margin-top: 2pt; }
+    .value-grid { grid-template-columns: 1fr 1fr 1fr; gap: 6pt; margin-top: 7pt; }
+    .value-card { padding: 3pt 7pt; border: 0; border-left: 1.5pt solid var(--accent2); border-radius: 0; break-inside: avoid; }
+    .value-card h3 { font-size: 9.5pt; margin-bottom: 1pt; }
+    .value-card p { font-size: 8.5pt; line-height: 1.35; }
+    .facts { grid-template-columns: 1fr 1fr; gap: 0 14pt; font-size: 8.5pt; margin-top: 7pt; break-inside: avoid; }
+    .facts div { gap: 6pt; padding: 2pt 0; border-bottom-color: var(--border); }
+    .facts dt { flex-basis: 52pt; font-size: 6.5pt; padding-top: 1.5pt; }
+    .facts dd { line-height: 1.35; }
 
     .skills-grid { grid-template-columns: 1fr 1fr; gap: 6pt; }
+    .skills-grid .skill-card:nth-child(7) { display: none; } /* teaching covered by stats + value cards */
     .skill-card { padding: 4pt 8pt; border: 0; border-left: 1.5pt solid var(--accent); border-radius: 0; break-inside: avoid; }
     .skill-head { font-size: 9.5pt; margin-bottom: 2pt; }
     .skill-dot { display: none; }
@@ -636,7 +713,7 @@
     .tag { font-size: 8pt; padding: 1.5pt 6pt; border-radius: 3pt; border-color: var(--border); }
 
     .timeline { gap: 4pt; }
-    .timeline-item { padding: 4pt 0 4pt 10pt; border: 0; border-left: 1.5pt solid var(--accent); border-radius: 0; break-inside: avoid; }
+    .timeline-item { padding: 3pt 0 3pt 10pt; border: 0; border-left: 1.5pt solid var(--accent); border-radius: 0; break-inside: avoid; }
     .timeline-item::before { display: none; }
     .job-title { font-size: 11pt; }
     .job-period { font-size: 8.5pt; }
@@ -644,7 +721,7 @@
     .job-badge { font-size: 7.5pt; padding: 0 4pt; border-color: var(--border); }
     .job-sub { font-size: 8pt; margin: 6pt 0 3pt; }
     .job-bullets { margin-top: 3pt; }
-    .job-bullets li { font-size: 9pt; line-height: 1.35; margin-bottom: 1pt; padding-left: 11pt; }
+    .job-bullets li { font-size: 9pt; line-height: 1.3; margin-bottom: 1pt; padding-left: 11pt; }
     .job-bullets li::before { content: '•'; font-size: 10pt; top: 0; }
 
     .certs-grid { grid-template-columns: 1fr 1fr; gap: 3pt 12pt; }
@@ -658,7 +735,7 @@
     .cert-issuer { margin-left: 4pt; }
     .cert-issuer { margin-top: 0; }
 
-    .edu-card { padding: 4pt 0 4pt 10pt; border: 0; border-left: 1.5pt solid var(--accent2); border-radius: 0; margin-bottom: 6pt; break-inside: avoid; }
+    .edu-card { padding: 4pt 0 4pt 10pt; border: 0; border-left: 1.5pt solid var(--accent2); border-radius: 0; margin-bottom: 4pt; break-inside: avoid; }
     .edu-degree { font-size: 10.5pt; }
     .edu-school { font-size: 9.5pt; margin: 1pt 0; }
     .edu-meta { font-size: 8.5pt; }
@@ -683,7 +760,7 @@
   <!-- HERO -->
   <header class="hero" id="top">
     <div>
-      <div class="hero-eyebrow">Available for SOC Analyst &amp; Security Roles</div>
+      <div class="hero-eyebrow">Open to Work · SOC Analyst · Network Security · Cybersecurity Instructor</div>
       <h1>Sief Allah Ahmed EL-Hamza<br><span>Daabes</span></h1>
       <p class="hero-sub">
         Cybersecurity &amp; Network Engineer &nbsp;·&nbsp; Founder @ Fekra Tech Academy &nbsp;·&nbsp; Full-Stack &amp; IoT Developer<br>
@@ -721,6 +798,12 @@
       <span class="status-dot"></span>
       Open to Work
     </div>
+    <ul class="hero-stats" aria-label="Highlights">
+      <li class="stat"><div class="stat-num">8</div><div class="stat-label">Industry certifications<br>Cisco · EC-Council · Fortinet · Microsoft</div></li>
+      <li class="stat"><div class="stat-num">500<small>+</small></div><div class="stat-label">Students trained in<br>networking &amp; security</div></li>
+      <li class="stat"><div class="stat-num">2 <small>yrs</small></div><div class="stat-label">Enterprise technical support<br>AT&amp;T (Sutherland) · Concentrix</div></li>
+      <li class="stat"><div class="stat-num">B.Sc. <small>+ ITI</small></div><div class="stat-label">Networking degree &amp;<br>Cyber Security diploma</div></li>
+    </ul>
   </header>
 
   <nav class="site-nav" aria-label="Sections">
@@ -732,7 +815,7 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#teaching">Teaching</a></li>
       <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact">Hire Me</a></li>
     </ul>
   </nav>
 
@@ -740,8 +823,32 @@
   <section class="section" id="summary">
     <div class="section-label">Professional Summary</div>
     <p class="summary-text">
-      Cybersecurity and network engineer with a B.Sc. in Computer Systems Networking, an ITI Cyber Security diploma, and CCNA, CEH, and Fortinet certifications, targeting SOC Analyst roles. Hands-on with SIEM and detection tooling (Splunk, Wazuh, Security Onion, Wireshark) and with vulnerability reconnaissance using Nmap, Shodan, and custom Python scanners. Two years of real-time network and device troubleshooting at AT&amp;T (Sutherland) and Concentrix, plus three years teaching networking and security to 500+ students. Founder of Fekra Tech Academy; builds full-stack web applications and ESP32 IoT systems.
+      SOC-ready cybersecurity and network engineer who pairs hands-on detection tooling with two years of real-time, customer-facing incident troubleshooting. B.Sc. in Computer Systems Networking, ITI Cyber Security diploma, and CCNA, CEH, and Fortinet certifications. Hands-on with Splunk, Wazuh, Security Onion, Wireshark, Nmap, and Shodan, and with custom Python scanners (Recon-Auditor). At AT&amp;T (Sutherland) and Concentrix I isolated and resolved network and device incidents under pressure with clear, documented escalations. As founder of Fekra Tech Academy I have trained 500+ students and led an instructor team, so I can brief non-technical stakeholders and upskill junior analysts as readily as I can read a packet capture.
     </p>
+
+    <div class="value-grid" aria-label="What I bring to your team">
+      <div class="value-card">
+        <h3>Detection &amp; triage from day one</h3>
+        <p>SIEM alert analysis, log investigation, and disciplined escalation, built on two years of handling live incidents against real customer SLAs.</p>
+      </div>
+      <div class="value-card">
+        <h3>Network depth behind every alert</h3>
+        <p>CCNA-level routing and switching, Fortinet firewalls, and Wireshark packet analysis: I understand the traffic that generated the event, not just the dashboard.</p>
+      </div>
+      <div class="value-card">
+        <h3>A force multiplier for the team</h3>
+        <p>Trained 500+ learners and led an instructor team. I write clear runbooks and reports, and I can onboard and coach junior analysts.</p>
+      </div>
+    </div>
+
+    <dl class="facts" aria-label="Quick facts for recruiters">
+      <div><dt>Open to</dt><dd>SOC Analyst (L1/L2) · Network Security Engineer · Cybersecurity Instructor / Trainer</dd></div>
+      <div><dt>Location</dt><dd>Giza, Egypt (Greater Cairo) · on-site, hybrid, or remote</dd></div>
+      <div><dt>Status</dt><dd>Actively looking · available for interviews and technical screens now</dd></div>
+      <div><dt>Education</dt><dd>B.Sc. Computer Systems Networking (AOU, 2025) · ITI Cyber Security Diploma</dd></div>
+      <div><dt>Certified</dt><dd>CCNA · CEH · Fortinet FCA &amp; FCF · EC-Council NDE · MCSA · Cisco Jr. Cybersecurity Analyst</dd></div>
+      <div><dt>Languages</dt><dd>Arabic (native) · English (professional)</dd></div>
+    </dl>
   </section>
 
   <!-- CORE SKILLS -->
@@ -1045,8 +1152,8 @@
 
   <!-- CONTACT -->
   <section class="cta" id="contact">
-    <h2>Looking for a SOC analyst who can also teach the team?</h2>
-    <p>I'm open to SOC Analyst, security operations, and network security roles in Egypt or remote. Email is the fastest way to reach me.</p>
+    <h2>Hiring for security, network, or technical training roles?</h2>
+    <p>I'm open to SOC Analyst, security operations, network security, and cybersecurity instructor roles, on-site in Greater Cairo, hybrid, or remote. Email is the fastest way to reach me, and I'm happy to walk through my SIEM labs or the Recon-Auditor tool on a call.</p>
     <div class="cta-actions">
       <a class="btn solid" href="mailto:Siefallahdaabes@gmail.com?subject=Opportunity%20for%20Sief%20Allah%20Daabes">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
@@ -1058,7 +1165,7 @@
   </section>
 
   <footer class="footer">
-    <p>Sief Allah Ahmed Daabes &nbsp;·&nbsp; Giza, Egypt &nbsp;·&nbsp; Updated November 2026 <span class="no-print">&nbsp;·&nbsp; <a href="#top">Back to top ↑</a></span> <span class="no-print">&nbsp;·&nbsp; <a href="https://github.com/SD3bes/Siefallahdaabes.github.io" target="_blank" rel="noopener">Source on GitHub</a></span></p>
+    <p>Sief Allah Ahmed Daabes &nbsp;·&nbsp; Giza, Egypt &nbsp;·&nbsp; Updated November 2026 <span class="no-print">&nbsp;·&nbsp; <a href="#top">Back to top ↑</a></span> <span class="no-print">&nbsp;·&nbsp; <a href="https://github.com/SD3bes/sd3bes.github.io" target="_blank" rel="noopener">Source on GitHub</a></span></p>
   </footer>
 
 </div>
